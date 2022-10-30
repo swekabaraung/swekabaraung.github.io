@@ -83,10 +83,10 @@
     margin-top: 20px;
     border-radius: 5px;
     background-color: white;
-    border:1px solid black ;
+    border:1px solid black;
 }
 .category:hover {
-    background-color:orangered;
+    background-color:rgb(228, 83, 30);
     color: white;
 
 }
@@ -135,7 +135,7 @@
     padding-right:10px;
 }
 .read_more{
-    color: aqua;
+    color:darkblue;
     margin-top:10px;
     display: inline-block;
     padding-left: 20px;
@@ -158,9 +158,10 @@
 /* avilable */
 .hot_arrival_header{
     border-left:4px solid orangered;
+    text-decoration-line: underline;
     margin-top: 50px;
     margin-left:50px;
-    padding-left:5px;
+    padding-left:35px;
 
 }
 .avilable_image{
@@ -216,8 +217,93 @@
     margin:20px 10px 50px;
   
 }
-.contact_text1{
-    padding:50px 50px 50px;
-    color:rgb(23, 24, 23);
-    
+.addto_cart{
+    padding: 10px 20px ;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-color: coral;
+}
+.addto_cart:hover{
+    cursor: pointer;
+    background-color:rgb(221, 104, 61);
+    color: white;
+}
+
+.contact_text{
+    position: absolute;
+    top: 150px;
+    left: 700px;
+}
+
+.summit_btn{
+    padding: 10px 20px; 
+    border-radius: 10px;
+    margin-top: 10px;
+    border-color: solid white;
+}
+.summit_btn:hover{
+    cursor: pointer;
+    background-color:rgb(221, 104, 61);
+    color: white;
+}
+.contact_img1{
+    margin-left:50px;
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.comment_text{
+    position:absolute;
+    top:280px;
+    left: 700px;
+    padding-top: 30px ;
+}
+.about_text{
+    position: absolute;
+    top: 150px;
+    left: 700px;
+}
+.about_image{
+    margin-left:50px;
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+.aboutfollow_text{
+    position:relative;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.more_itemsproduct{
+    color: aqua;
+    margin-top:10px;
+    display: inline-block;
+  
+
+}
+.more_itemsproduct:hover{
+    cursor: pointer;
+    background-color:rgb(221, 104, 61);
+    color: white;
+}
+.blog_page_header{
+    margin-top: 30px;
+    margin-left:50px;
+    padding-left:35px;
+}
+.read_more:hover{
+    cursor: pointer;
+    background-color:rgb(221, 104, 61);
+    color: white;
+    padding:5px 5px 5px ;
+}
+.service_image{
+    display: inline-block;
+    margin-left: 50PX;
+    margin-top: 30PX;
+    padding-bottom:30px;
+
 }

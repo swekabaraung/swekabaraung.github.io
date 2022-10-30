@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type</title>
+</head>
+<body>
+    <h1>Data Type</h1>
+
+    <script>
+        // Boolean
+        let single=true;
+        console.log(single);
+        console.log(typeof(single));
+
+        let married=false;
+        console.log(married);
+        console.log(typeof(married));
+
+        // undefined
+        let myLove;
+        console.log(myLove);
+
+        // null
+        let son=null;
+        console.log(son);
+        console.log(typeof(son));
+
+        // Array
+
+        let studentArray=new Array('David','Susan','Julian','Bernad');
+        console.log(studentArray);
+        console.log(typeof(studentArray));
+        console.log(studentArray[0]);
+
+        let array1=['Kyaw Kyaw','Sir Hein','Developer'];
+        console.log(array1);
+        console.log(typeof(array1));
+        console.log(array1[1]);
+        
+
+        let multiArray=['a','b','c',['d','e','f']];
+        console.log(multiArray);
+        console.log(typeof(multiArray));
+        console.log(multiArray[1]);
+        console.log(multiArray[3][2]);
+
+        // object
+        let car={
+            name : 'Honda Fix',
+            color:['white','Black'],
+            price: 40000000,
+            qty: 2,
+        }
+    </script>
+</body>
+</html>
