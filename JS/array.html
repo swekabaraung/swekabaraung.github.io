@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Array</h1>
+
+    <script>
+        // Array
+        let studentList=['Julian' , 'Susan' , 'Bernad'];
+        console.log(studentList);
+        studentList.push('Aye Aye');
+        console.log(studentList);
+        studentList.unshift('Hla Hla');
+        console.log(studentList);
+        studentList.pop();
+        console.log(studentList);
+        studentList.shift();
+        console.log(studentList);
+
+        studentList.sort();
+        console.log(studentList);
+        studentList.reverse();
+        console.log(studentList);
+
+        let studentListStr=studentList.toString();
+        console.log(studentListStr);
+        let studentListArray=studentListStr.split(',');
+        console.log(studentListArray);
+        console.log(studentListArray.length);
+
+        let studentList2=['July','Ayemi'];
+        let studentList3=['David','Harvard'];
+        let studentList4=['Yoo Yoo','Shwe'];
+
+        let result=studentList.concat(studentList2,studentList3);
+        console.log(result);
+
+        let multiArray=[...studentList,...studentList2,...studentList3];
+        console.log(multiArray);
+
+        let arrayConcat=result.concat(studentList4);
+        console.log(arrayConcat);
+
+        // Object
+        let student1={
+            roll:1,
+            nmae: 'Ahe Htoo Naw',
+            email: 'ahehtoonaw@gmail.com',
+            major: 'High School',
+            age : 18,
+            address : 'Mandalay',
+
+        }
+        let student2={
+            roll:2,
+            nmae: 'Naw Naw',
+            email: 'nawnaw@gmail.com',
+            major: 'IT major',
+            age : 28,
+            address : 'Mandalay',
+
+        }
+        let student3={
+            roll:3,
+            nmae: 'Ei Ei',
+            email: 'eiei@gmail.com',
+            major: 'IT major',
+            age : 27,
+            address : 'Yangon',
+
+        }
+        let studentListArr=[student1,student2];
+        studentListArr.push(student3);
+        console.log(studentListArr)
+
+
+
+
+    </script>
+    
+</body>
+</html>

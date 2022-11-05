@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+<body>
+    <h1>Guess Game</h1>
+    <script>
+    let secrectNum=13;
+    let userNumber= prompt("Enter Number 1 to 20 ");
+    let x=Math.floor (Math.random()*20)+1;
+    let userIsGuessing=false;
+    let count=1;
+     
+    
+    while (secrectNum != userNumber){
+        count++;
+        if (secrectNum<userNumber){
+            alert("You Number is greater than Secrect Number,Try Again!");
+        }else {
+            alert("Your Number is less Than Secrect Number, Try Again!");
+        }
+        userNumber=prompt("Enter Number 1 to 20");
+    }
+    alert("Correct,Well Done!"+count+"times to guess number.");
+
+    </script>
+   
+    
+</body>
+</html> 

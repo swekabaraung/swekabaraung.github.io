@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evenNum or oddNum or noN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1> Let's see evenNum or oddNum or noN ! </h1>
+   <br>
+<input id="userInput" type="text" value="">
+<div id="results" onclick="evenOrOdd()" > <button class="show_results"> Show results </button> </div>
+
+
+<script>
+
+function evenOrOdd(){
+  let userInput = Number(document.getElementById("userInput").value);
+  if ((userInput % 2) == 0){
+    document.getElementById("results").innerHTML = "The Number is Even";
+  } else if ((userInput % 2) == 1){
+    document.getElementById("results").innerHTML = "The Number is Odd";
+  } else {
+    document.getElementById("results").innerHTML = "NaN";
+  }
+}
+
+</script>
+
+    
+</body>
+</html>
