@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+</head>
+<body>
+    <h1>Student Register Form</h1>
+    <form action="">
+        Name : <input type="text" name="name"> <br>
+        Age : <input type="number" name="age"> <br>
+        city : <input type="text" name="'city"> <br>
+        <button onclick="showData()">Add Student</button>
+    </form>
+    <h2>Student List</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>City</td>
+            </tr>
+        </thead>
+        <tbody id="myData">
+
+        </tbody>
+
+    </table>
+    <script>
+        function showData(){
+            alert("Ok");
+        }
+    </script>
+    
+</body>
+</html>
