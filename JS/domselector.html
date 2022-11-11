@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dom Selector</h1>
+    <p id="myId">Id Selector</p>
+    <p class="myClas">Class 1 Selector</p>
+    <p class="myClas">Class 2 Selector</p>
+    <p class="myClas">Class 3 Selector</p>
+    <p >Tag Selector</p>
+    <p>Query Selector</p>
+    <button onclick="sayHi()">Click Me</button>
+
+    <script>
+        function sayHi() {
+            let myId=document.getElementById('myId');
+            console.log(myId.innerHTML);
+            console.log(myId.innerText);
+
+            let myClass=document.getElementsByClassName('myClass');
+            console.log(myClass);
+            // console.log(myClass[1].innerText///);
+
+            let myTagName=document.getElementsByTagName('p');
+            console.log(myTagName[4].innerText);
+            
+        }
+    </script>
+    
+</body>
+</html>

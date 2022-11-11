@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Student Register Form</h1>
-    <form action="">
+    <form name="myForm">
         Name : <input type="text" name="name"> <br>
         Age : <input type="number" name="age"> <br>
-        city : <input type="text" name="'city"> <br>
-        <button onclick="showData()">Add Student</button>
+        city : <input type="text" name="city"> <br>
+        <button type="button" onclick="showData()">Add Student</button>
+        <button type="button" onclick="sayHi()"> Click Me</button>
     </form>
     <h2>Student List</h2>
     <table border="1" cellpadding="10">
@@ -30,9 +32,63 @@
 
     </table>
     <script>
+        let studentListArray=[];
         function showData(){
-            alert("Ok");
+            // alert("Ok");
+            // get data 
+            let name= document.myForm.name.value;
+            let age= document.myForm.age.value;
+            let city= document.myForm.city.value;
+
+            console.log(name);
+
+            // add to array 
+            let student={
+                studentName : name,
+                studentAge : age,
+                studentCity : city,
+
+            
+            }
+            // console.log(student)
+            studentListArray.push(student);
+
+            // show data 
+            console.log(studentListArray);
+
+
+            let  data='';
+        for (let i = 0; i < studentListArray.length; i++) {
+            let studentList = studentListArray[i];
+            console.log(studentList);
+
+            data=data+
+           
+                `<tr>
+                   <td> ${i+1} </td>
+                    <td> ${studentList.studentName} </td>
+                    <td> ${studentList.studentAge} </td>
+                    <td> ${studentList.studentCity} </td>
+                </tr>`; 
         }
+        document.getElementById('myData').innerHTML=data; 
+
+    
+
+        
+        //     function sayHi() {
+        //     let ans=confirm("Go To Youtube?")
+        //     if (ans) {
+        //         document.location.href="https://www.youtube.com/"
+                
+        //     } else {
+        //         document.location.href="https://www.google.com/"
+        //     }
+        //  } 
+        }
+
+
+       
     </script>
     
 </body>
