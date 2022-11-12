@@ -121,10 +121,10 @@
     text-decoration: none;
     text-transform: none;
 }
-.enroll_now  :hover{
+.enroll_now a:hover{
     cursor: pointer;
-    background-color: rgb(32, 128, 45);
-    color: white;   
+    background-color: rgb(220, 240, 223);
+    color: rgb(7, 182, 15);   
 }
 .access_text2{
    text-shadow: 10px ;
@@ -228,8 +228,9 @@
 .more_items a{
     color: rgb(235, 49, 111);
 }
-.more_items:hover {
+.more_items a:hover {
     cursor: pointer;
+    color: #4CAF50;
 }
 /* start support */
 .support div p{
@@ -302,10 +303,10 @@
     text-decoration: none;
     text-transform: none;
 }
-.learn_now  :hover{
+.learn_now a:hover{
     cursor: pointer;
-    background-color: rgb(32, 128, 45);
-    color: white;   
+    background-color: rgb(216, 236, 219);
+    color: rgb(7, 182, 15);   
 }
 /* Learn */
 .learn {
@@ -456,14 +457,15 @@
     text-decoration: none;
     text-transform: none;
 }
-.teach_now:hover{  
+.teach_now a:hover{  
     cursor: pointer;
-    background-color: rgb(32, 128, 45);
-    color: white;   
+    background-color: rgb(225, 241, 227);
+    color: rgb(7, 182, 15);   
 }
+/* Pagination  */
 .pagination {
-    padding: 20px 20px 10px 20px;
-    margin: 10px 10px 10px 10px;
+    padding: 30px 50px 30px 50px;
+    margin: 10px 50px 10px 50px;
 }
 .pagination a.active {
     background-color: #4CAF50;
@@ -479,6 +481,7 @@
     padding: 30px 50px 30px ;
     color: darkcyan;
 }
+/* Search  */
 .search_box{
     height: 40px;
     width: 400px;
@@ -503,11 +506,11 @@
     padding: 10px 20px; 
     border-radius: 10px;
     margin-top: 10px;
-    border-color: solid rgb(14, 243, 193);
+    border-color: solid rgb(211, 233, 228);
 }
 .submmit_btn:hover{
     cursor: pointer;
-    background-color:rgb(103, 247, 211);
+    background-color:rgb(7, 226, 171);
     color: white;
 }
 .create_image1{
@@ -632,10 +635,10 @@
     text-decoration: none;
     text-transform: none;
 }
-.edu_now:hover{  
+.edu_now a:hover{  
     cursor: pointer;
-    background-color: rgb(32, 128, 45);
-    color: white;   
+    background-color: rgb(210, 230, 212);
+    color:rgb(7, 182, 15);   
 }
 .pagination {
     padding: 20px 20px 10px 20px;
@@ -650,20 +653,37 @@
 .pagination a:hover:not(.active) {background-color: rgb(223, 226, 32);}
 /* Help_us  */
 #dafdirectdiv {
-    border: 4px solid #E0E0E0;
+    border: 4px solid #e0e0e0;
     width: 212px;
     margin: 0;
     padding: 20px 15px 10px 15px;
     font-family: 'Lucida Grande', 'Lucida SansUnicode', Arial, sans-serif;
     font-size: 14px;
-    color: #365f7b;
+    color: #1a1f22;
     text-align: center;
 }
 #dafdirectdiv form img {
     margin: 0 auto;
     display: block;
 }
+.donateto_cart {
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-color: rgb(185, 81, 245);
+}
+.donateto_cart:hover{
+    cursor: pointer;
+    background-color:rgb(243, 100, 33);
+    color: white;
+}
+/* About  */
 .center{
     text-align: center;
 }
+/* .top_center {
+    display: inline-block;
+} */
 
