@@ -52,6 +52,7 @@
 .create_text{
     text-decoration: none;
     text-decoration: none;
+    color: aliceblue;
 }
 .signin_button  span{
     float: right;
@@ -65,6 +66,7 @@
 .signin_text{
     text-decoration: none;
     text-decoration: none;
+    color: aliceblue;
 }
 .signin_menu, .create_menu {
     color: rgb(241, 236, 236);
@@ -89,8 +91,8 @@
 }
 .bunner_image{  
     float: right;
-    width: 50%;
-    height: 50%;
+    width: 47%;
+    height: 60%;
     border-radius: 30px;
     transition: ease-in;
 }
@@ -100,33 +102,49 @@
 }
 .bunner_text{ 
     position: absolute;
-    margin: 20px 50px 20px 20px;
-    padding: 30px 10px 30px 10px ;
-    top: 80px;
-    
+    margin: 20px 5px 5px 5px;
+    padding: 5px 5px 5px 5px ;
+    top: 80px;   
 }
-.bunner_text  h1{
-    margin: 20px 20px 20px 20px;
-    padding: 20px 30px 20px 20px ;
+.bunner_text p{
+    margin: 10px 20px 20px 20px;
+    padding: 20px 20px 5px 20px ;
+}
+.bunner_text h1{
+    margin: 20px 20px 10px 20px;
+    padding: 10px 20px 10px 20px ;
 }
 .enroll_now{
-    padding: 20px 20px ;
+    display: inline-block;
+    padding: 10px 10px ;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    border-color:rgb(0, 173, 188);
-    color: rgb(252, 76, 32) ;   
-}
-.enroll_now a{
-    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-color: rgb(0, 173, 188);
     text-transform: none;
+    text-decoration: none;
 }
-.enroll_now a:hover{
+.enroll_text{
+    display: inline-block;
+    padding: 10px 10px ;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-color: rgb(0, 173, 188);
+    text-transform: none;
+    text-decoration: none;
+    
+}
+.enroll_text:hover{
     cursor: pointer;
-    background-color: rgb(220, 240, 223);
-    color: rgb(7, 182, 15);   
+    background-color:rgb(33, 154, 224);
+    color: aliceblue;    
 }
+
 .access_text2{
    text-shadow: 10px ;
 }
@@ -205,12 +223,13 @@
     padding-right: 10px;
 }
 .book_arrival_header{
-    border-left:4px solid rgb(191, 204, 8);
+    border-left:4px solid rgb(33, 154, 224);
     text-decoration: none;
     text-transform: none;
-    margin-top: 50px;
-    margin-left:50px;
-    padding-left:35px;
+    margin-top: 20px;
+    margin-left:20px;
+    padding-left: 30px;
+   
 }
 .book_image{
     display: inline-block;
@@ -223,14 +242,14 @@
 }
 .more_items{
     margin-top: 50px;
-    text-align: center;
+    text-align: center; 
 }
 .more_items a{
-    color: rgb(235, 49, 111);
+    color: rgb(39, 38, 38);
 }
 .more_items a:hover {
     cursor: pointer;
-    color: #4CAF50;
+    color: rgb(33, 154, 224);
 }
 /* start support */
 .support div p{
@@ -279,8 +298,8 @@
 }
 .bunnerlearn_text{
     position: absolute;
-    top: 150px;
-    left: 550px;
+    top: 130px;
+    left: 500px;
 }
 .bunnerlearn_text  h1{
     margin-bottom:10px ;
@@ -289,7 +308,7 @@
     color: rgb(241, 113, 9);
 }
 .bunnerlearn_text p{
-    color: rgb(2, 1, 2);
+    color: rgb(13, 26, 29);
 }
 .learn_now{
     padding: 20px 20px ;
@@ -326,7 +345,7 @@
 
 }
 .learn_date{
-    color:rgb(247, 21, 145);
+    color:rgb(48, 108, 238);
     text-align: justify;
     padding-left:10px;
     padding-right:10px;
@@ -357,11 +376,11 @@
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 20px;
-    border-color: rgb(192, 243, 9);
+    border-color:  rgb(33, 154, 224);
 }
 .learnto_cart:hover{
     cursor: pointer;
-    background-color:rgb(241, 177, 56);
+    background-color: rgb(33, 154, 224);
     color: white;
 }
 /* Teaching */
@@ -388,7 +407,7 @@
 
 }
 .teach_date{
-    color:rgb(247, 21, 145);
+    color: rgb(33, 154, 224);
     text-align: justify;
     padding-left:10px;
     padding-right:10px;
@@ -420,11 +439,11 @@
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 20px;
-    border-color: rgb(192, 243, 9);
+    border-color:  rgb(33, 154, 224);
 }
 .teachto_cart:hover{
     cursor: pointer;
-    background-color:rgb(241, 177, 56);
+    background-color: rgb(33, 154, 224);
     color: white;
 }
 .bunnerteach_text{
@@ -448,21 +467,13 @@
     margin-top: 10px;
     margin-left: 30px;
     margin-right: 30px;
-    border-color:rgb(0, 173, 188);
-    color: rgb(252, 76, 32) ;   
+    border-color:rgb(33, 154, 224); 
 }
-.join_text{
-    margin-top:10px;
-    text-align: justify;
-}
-.teach_now a{
-    text-decoration: none;
-    text-transform: none;
-}
-.teach_now a:hover{  
+.teach_now:hover{  
     cursor: pointer;
-    background-color: rgb(225, 241, 227);
-    color: rgb(7, 182, 15);   
+    background-color: rgb(33, 154, 224);
+    color: aliceblue;
+   
 }
 /* Pagination  */
 .pagination {
@@ -508,11 +519,11 @@
     padding: 10px 20px; 
     border-radius: 10px;
     margin-top: 10px;
-    border-color: solid rgb(211, 233, 228);
+    border-color: solid rgb(33, 154, 224);
 }
 .submmit_btn:hover{
     cursor: pointer;
-    background-color:rgb(7, 226, 171);
+    background-color:rgb(33, 154, 224);
     color: white;
 }
 .create_image1{
@@ -540,7 +551,7 @@
 }
 .signin_text1{
     position: absolute;
-    top: 270px;
+    top: 300px;
     left: 500px;
     color: rgb(239, 236, 245);
 }
@@ -548,6 +559,21 @@
     width: 200px;
     height: 30px;
     margin-left: 10px;
+}
+.form_create_box2{
+    width: 200px;
+    height: 30px;
+    margin-left: 42px;
+}
+.form_create_box3{
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+}
+.form_create_box4{
+    width: 200px;
+    height: 30px;
+    margin-left: 71px;
 }
 /* Edu_Games  */
 .edu {
@@ -603,11 +629,11 @@
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 20px;
-    border-color: rgb(192, 243, 9);
+    border-color:  rgb(33, 154, 224);
 }
 .eduto_cart:hover{
     cursor: pointer;
-    background-color:rgb(241, 177, 56);
+    background-color: rgb(33, 154, 224);
     color: white;
 }
 .bunneredu_text{
@@ -677,11 +703,11 @@
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 20px;
-    border-color: rgb(185, 81, 245);
+    border-color: rgb(33, 154, 224);
 }
 .donateto_cart:hover{
     cursor: pointer;
-    background-color:rgb(243, 100, 33);
+    background-color:rgb(33, 154, 224);
     color: white;
 }
 /* About  */
