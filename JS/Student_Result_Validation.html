@@ -40,14 +40,9 @@
                <tr>
                    <td>Pass</td>
                    <td>Fail</td>
-                   <td  >Result</td> <br>
                    
                </tr>
-               <tr>
-                <td class="pass" >0</td>
-                   <td class="fail">0</td>
-                   <td class="result">0</td>
-               </tr>
+             
 
            </tfoot>
            </table>
@@ -58,9 +53,9 @@
         let exam_marksListArray=[];
 
         function showData(){
-            // alert('Ok');
+             // alert('Ok');
              // get data 
-            let Name= document.myForm.name.value;
+             let Name= document.myForm.name.value;
             let Myanmar= document.myForm.myan.value;
             let English= document.myForm.eng.value;
             let Mathematics= document.myForm.maths.value;
@@ -78,7 +73,6 @@
                 Chemistry:Chemistry,
                 Biology:Biology,
                 Total : Total,
-
             }
           
             exam_marksListArray.push(list);
@@ -87,10 +81,11 @@
             console.log(exam_marksListArray);
 
 
-            let  data='';
+            let  data=''; let output='';
         for (let i = 0; i < exam_marksListArray.length; i++) {
+
             let examList = exam_marksListArray[i];
-            let output=(`${Myanmar}+${English}+${Mathematics}+${Physics}+${Chemistry}+${Biology}=${Total}`);
+
             console.log(examList);
 
             data=data+
@@ -106,9 +101,30 @@
                     <td> ${list.Biology} </td>
                     <td> ${list.Total} </td>
                 </tr>`; 
+
+                 let pass=0;
+        
+        let output_result=document.getElementById('output');
+
+              
+            if(Myanmar < 40 || English < 40 || Mathematics < 40 || Physics < 40 || Chemistry < 40 || Biology < 40 ) {
+        output=output+ 
+        document.write(`${Name}: Fail `);
+        
+    }
+    else {
+        document.write(`${Name}:Pass `);
+        
+
         }
         document.getElementById('myData').innerHTML=data; 
-        document.getElementById("output").innerHTML=data; 
+      
+        }
+            
+        
+
+        }
+           
         
         // let pass=document.getElementById('pass').value;
         // let fail=document.getElementById('fail').value;
@@ -123,20 +139,7 @@
        
      
 
-        
-
-        
-        // for (let j = 0; j < data.length; j++) {
-        //     let grandTotal=``;    
-        // }
-        // document.getElementById('grandTotal').innerHTML=data; 
-        }  
-        // let pass=0;
-        // let fail=0;
-        // let total=0;
-
-        // function output(clickButton) { 
-        //     if (output===pass) {
+        // if (output===pass) {
         //         pass++;
         //         output=pass;
                 
@@ -144,6 +147,26 @@
         //         fail++;
         //         output=fail;
         //     }
+
+        
+        // for (let j = 0; j < data.length; j++) {
+        //     let grandTotal=``;    
+        // }
+        // document.getElementById('grandTotal').innerHTML=data; 
+     
+        // let pass=0;
+        // let fail=0;
+        // let total=0;
+
+        // function output(clickButton) { 
+            // if (output===pass) {
+            //     pass++;
+            //     output=pass;
+                
+            // } else {
+            //     fail++;
+            //     output=fail;
+            // }
 
         //     document.getElementById("output").getElementsByClassName(clickButton)[0].innerHTML=output;
         //     total=
