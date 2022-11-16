@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Expense Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Monthly Expense Input Box</h1>
+    <form name="myForm">
+        Date : <input type="date" name="date"> <br>
+        Amount  : <input type="number" name="money"> <br>
+        <button type="button" onclick="showData()"> Click Me</button>
+    </form>
+    <h2>Monthly Expense</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Date</td>
+                <td>Amount</td>
+                <td>Total</td>
+                <br>
+            </tr>
+            
+
+        </thead>
+        <tbody id="myData"  >
+            <td colspan="3" id="grandTotal">Grand Total</td>
+            
+            
+        </tbody>
+
+    </table>
+    <script>
+        let expenseListArray=[];
+        function showData(){
+            // alert("Ok");
+            // get data 
+            let expenseDate= document.myForm.date.value;
+            let expenseMoney= document.myForm.money.value;
+            let expenseTotal=document.myForm.money.value;
+
+            // add to array 
+            let expense={
+                expenseDate : expenseDate,
+                expenseMoney : expenseMoney,
+                expenseTotal : expenseTotal,
+
+            }
+            // console.log(student)
+            expenseListArray.push(expense);
+
+            // show data 
+            console.log(expenseListArray);
+
+
+            let  data='';
+        for (let i = 0; i < expenseListArray.length; i++) {
+            let expenseList = expenseListArray[i];
+            console.log(expenseList);
+
+            data=data+
+           
+                `<tr>
+                   <td> ${i+1} </td>
+                    <td> ${expenseList. expenseDate} </td>
+                    <td> ${expenseList.expenseMoney} </td>
+                    <td> ${expenseList. expenseTotal} </td>
+                </tr>`; 
+        }
+        document.getElementById('myData').innerHTML=data; 
+
+       
+        for (let j = 0; j < data.length; j++) {
+            let grandTotal=``;    
+        }
+        document.getElementById('grandTotal').innerHTML=data; 
+
+
+
+      
+        }  
+    </script>
+    
+</body>
+</html>

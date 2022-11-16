@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Validation/title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Result Validation</h1>
+
+
+    <form  name="myForm" action="" method="post">
+        Name : <input type="text" name="name"> <br>
+    Myanmar : <input type="number" name="myan" > <br>
+    English : <input type="number" name="eng"> <br>
+    Mathematics : <input type="number" name="maths"> <br>
+    Physics : <input type="number" name="phys"> <br>
+    Chemistry : <input type="number" name="chem"> <br>
+    Biology : <input type="number" name="bio"> <br>
+    <button type="button" onclick="showData()">Click Me</button>
+       
+        <table border="1" cellpadding="10">
+           <thead>
+               <th>No</th>
+               <th>Name</th>
+               <th>Myanmar </th>
+               <th>English </th>
+               <th>Mathematics </th>
+               <th>Physics </th>
+               <th>Chemistry </th>
+               <th>Biology </th>
+               <th id="output">Total</th>
+           </thead>
+
+           <tbody id="myData">
+
+           </tbody>
+
+           <tfoot id="output">
+               <tr>
+                   <td>Pass</td>
+                   <td>Fail</td>
+                   <td  >Result</td> <br>
+                   
+               </tr>
+               <tr>
+                <td class="pass" >0</td>
+                   <td class="fail">0</td>
+                   <td class="result">0</td>
+               </tr>
+
+           </tfoot>
+           </table>
+
+
+   </form>
+    <script>
+        let exam_marksListArray=[];
+
+        function showData(){
+            // alert('Ok');
+             // get data 
+            let Name= document.myForm.name.value;
+            let Myanmar= document.myForm.myan.value;
+            let English= document.myForm.eng.value;
+            let Mathematics= document.myForm.maths.value;
+            let Physics= document.myForm.phys.value;
+            let Chemistry= document.myForm.chem.value;
+            let Biology= document.myForm.bio.value;
+            let Total=Number( Myanmar)+ Number( English) + Number( Mathematics ) + Number( Physics) + Number ( Chemistry)  + Number(Biology) ;
+             // add to array 
+            let list={
+                Name : Name,
+                Myanmar : Myanmar,
+                English : English,
+                Mathematics: Mathematics,
+                Physics: Physics,
+                Chemistry:Chemistry,
+                Biology:Biology,
+                Total : Total,
+
+            }
+          
+            exam_marksListArray.push(list);
+
+            
+            console.log(exam_marksListArray);
+
+
+            let  data='';
+        for (let i = 0; i < exam_marksListArray.length; i++) {
+            let examList = exam_marksListArray[i];
+            let output=(`${Myanmar}+${English}+${Mathematics}+${Physics}+${Chemistry}+${Biology}=${Total}`);
+            console.log(examList);
+
+            data=data+
+           
+                `<tr>
+                   <td> ${i+1} </td>
+                    <td> ${list.Name} </td>
+                    <td> ${list.Myanmar } </td>
+                    <td> ${list.English} </td>
+                    <td> ${list.Mathematics} </td>
+                    <td> ${list.Physics} </td>
+                    <td> ${list.Chemistry} </td>
+                    <td> ${list.Biology} </td>
+                    <td> ${list.Total} </td>
+                </tr>`; 
+        }
+        document.getElementById('myData').innerHTML=data; 
+        document.getElementById("output").innerHTML=data; 
+        
+        // let pass=document.getElementById('pass').value;
+        // let fail=document.getElementById('fail').value;
+        
+
+        // if (total>=40) {
+            // return=false;
+            
+        // } else {
+            
+        // }
+       
+     
+
+        
+
+        
+        // for (let j = 0; j < data.length; j++) {
+        //     let grandTotal=``;    
+        // }
+        // document.getElementById('grandTotal').innerHTML=data; 
+        }  
+        // let pass=0;
+        // let fail=0;
+        // let total=0;
+
+        // function output(clickButton) { 
+        //     if (output===pass) {
+        //         pass++;
+        //         output=pass;
+                
+        //     } else {
+        //         fail++;
+        //         output=fail;
+        //     }
+
+        //     document.getElementById("output").getElementsByClassName(clickButton)[0].innerHTML=output;
+        //     total=
+            
+        // }
+
+          
+                        
+           
+    </script>
+    
+</body>
+</html>
