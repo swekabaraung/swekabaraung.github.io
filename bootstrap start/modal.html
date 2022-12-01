@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center text-info">Modal</h1>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2  row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="Images/undraw_mindfulness_re_5cuv.svg" alt="" class="card-img-top">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore esse laboriosam ipsum soluta obcaecati sint consectetur dicta necessitatibus vitae quisquam! Nobis provident, distinctio tenetur in quod quasi eos iusto quos.</p>
+                        <button class="btn btn-primary" data-bs-target="#modal_1" data-bs-toggle="modal">read more</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+
+    </div>
+    <button class="btn btn-success position-relative">
+        Mail
+        <span class="badge position-absolute top-0 start-100 text-light bg-danger p-1 rounded-circle">
+            12
+
+        </span>
+    </button>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<div class="modal fade" id="modal_1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">This is Modal Header.</h3>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                <div class="col-6">
+                    <img src="images/tree1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6">
+                  
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis praesentium veniam a adipisci, tempore dolorem cumque modi vitae iusto quis quos, ducimus id sed neque aliquid quod vero dolorum? Voluptatum?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-success" data-bs-target="">Save</button>
+
+                </div>
+               </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
