@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- CSS Selector 
+    -element Selector
+    -id Selector
+    -class selector
+    -universal Selector
+    -attribute selector -->
+
+    <h1 id="heading">JQuery is Funny!</h1>
+   
+    <p class="p-tag">This is p tag 1.</p>
+    <p class="p-tag">This is p tag 2.</p>
+    <p class="p-tag">This is p tag 3.</p>
+
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <p id="p-click">Self Selector</p>
+
+
+
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function(){
+                $("#heading").hide('slow');
+                $(".p-tag").hide('slow');
+
+            });
+
+            $("#show").click(function(){
+                $("#heading").show('slow');
+                $(".p-tag").show('slow');
+
+            });
+
+            $("#p-click").click(function(){
+                $(this).hide('3000',function () {
+                    alert("Hello");
+                    $(this).show(3000);
+                    
+                });
+
+            });
+            
+            
+        });
+
+       
+    </script>
+    
+</body>
+</html>

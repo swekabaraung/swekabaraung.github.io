@@ -7,8 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="jquery-3.6.1.min.js">
+    <h1>jQuery Intro</h1>
 
+
+
+
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        alert('Hello World!');
+        //jQuery(selector).action()
+        //$(selector).action()
+        // Nameless Function
+        let fun =function(){
+            let h1=document.querySelector('h1');
+            console.log(h1);
+        }
+        fun();
+
+        $(document).ready(function(){
+            alert('Hello jquery!');
+        })
     </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> CDN Google -->
 </body>
 </html>

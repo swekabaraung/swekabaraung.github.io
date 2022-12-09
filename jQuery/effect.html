@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum totam officia ea a eius, voluptatum deleniti, quas molestias eos quos explicabo, distinctio dolor facilis quasi! Distinctio in nostrum amet quam!
+    </p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade_in">Fade In</button>
+    <button id="fade_out">Fade Out</button>
+    <button id="fade_toggle">Fade Toggle</button>
+    <button id="fade_to">Fade To</button>
+
+    
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function(){
+                $('p').hide(1000);
+            });
+
+            $("#show").click(function(){
+                $('p').show(1000);
+            });
+
+            $("#toggle").click(function(){
+                $('p').toggle('slow');
+            });
+
+            $("#fade_in").click(function(){
+                $('p').fadeIn('slow');
+            });
+
+            $("#fade_out").click(function(){
+                $('p').fadeOut('slow');
+            });
+
+            $("#fade_toggle").click(function(){
+                $('p').fadeOut('slow');
+            });
+
+            // fadeTo milisecond, oposity, callback function
+
+            $("#fade_to").click(function(){
+                $('p').fadeTo(1000,0.2 ,function(){
+                    $('p').fadeTo(1000,1);
+
+                });
+            });
+        
+            
+        });
+    </script>
+</body>
+</html>
