@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePage</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    
+
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+            <img src="Images/10.png" alt="" style="width: 100px; height:100px ;">
+            <a href="" class="navbar-brand me-auto"> Christmas's Gallery</a>
+            <button  class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_ul">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse " id="navbar_ul"> 
+                    <ul class="navbar-nav ms-auto">
+                        <li  class="nav-item me-3 "><a href="" class="nav-link" >Gallery</a></li>
+                        <li  class="nav-item me-3"><a href="" class="nav-link" >About</a></li>
+                        <li  class="nav-item me-3"><a href="" class="nav-link" >Contact</a></li>
+                        <li> <a href="" class="nav-item me-3"><i class="fa-solid fa-cart-shopping fa-2x"></i></a></li>  
+                    </ul>
+                </div>  
+        </div>     
+    </nav>
+
+
+<br>
+    <div class="card">
+        <div class="card-header ">
+            <h3 class="card-title p-3"> Christmas's Gallery</h3>
+            <p class="card-text p-3">The exchanging of gifts is one of the core aspects of the modern Christmas celebration, making it the most profitable time of year for retailers and businesses throughout the world. On Christmas, people exchange gifts based on the Christian tradition associated with Saint Nicholas,[208] and the gifts of gold, frankincense, and myrrh which were given to the baby Jesus by the Magi.</p>
+            <hr>
+            <p class="card-text p-3">Christmas gifts are specially selected presents that are given to loved ones during the holiday season in western cultures. Personalized gifts, unique presents, gift baskets, handmade items.</p>
+            <button class="btn btn-outline-primary ms-2">Read More</button>
+        </div>
+
+        <br>
+
+
+
+        <h1 class="text-center text-danger my-5">Chirstmas Gifts</h1>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="Images/1.png" alt="" class="card-img-top">
+                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                    </div>  
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="Images/2.png" alt="" class="card-img-top">
+                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                    </div>  
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="Images/3.png" alt="" class="card-img-top">
+                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                    </div>  
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="Images/4.png" alt="" class="card-img-top">
+                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                    </div>  
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="Images/5.png" alt="" class="card-img-top">
+                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                    </div>  
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="Images/6.png" alt="" class="card-img-top">
+                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                    </div>  
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="Images/7.png" alt="" class="card-img-top">
+                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                    </div>  
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="Images/8.png" alt="" class="card-img-top">
+                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                    </div>  
+                </div>
+        </div>
+
+    </div>
+    <h1 class="text-center text-danger my-5">Gallery Featured Products</h1>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="Images/2.png" alt="" class="card-img-top">
+               
+                </div>  
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="Images/3.png" alt="" class="card-img-top">
+                  
+                </div>  
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="Images/4.png" alt="" class="card-img-top">
+                   
+                </div>  
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="Images/5.png" alt="" class="card-img-top">
+                 
+                </div>  
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="Images/6.png" alt="" class="card-img-top">
+                    
+                </div>  
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="Images/7.png" alt="" class="card-img-top">
+                  
+                </div>  
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="Images/8.png" alt="" class="card-img-top">
+                   
+                </div>  
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="Images/9.png" alt="" class="card-img-top">
+                    
+                </div>  
+            </div>
+    </div>
+
+    </div>
+    <h1 class="text-center text-danger my-5">About</h1>
+    <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 ">
+        <div class="col mb-3">
+            <div class="card">
+                <img src="Images/10.png" alt="" class="card-img-top">
+               
+            </div>  
+        </div>
+        <div class="col mb-3">
+            <div class="card">
+              
+                <p class="card-text p-3">Chirstmas Pte. Ltd. is a Thailand multinational technology company that specialises in e-commerce. The company was launched in Thailand in 2013, before it expanded abroad.</p>
+                
+            </div>  
+        </div>    
+    </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-3 ">
+            <div class="col mb-3">
+                <div class="card">
+                    <h4 class="m-3">Phone</h4>
+                    <p class="card-text p-3">+66097310417</p>
+                   
+                </div>  
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <h4 class="m-3">Email</h4>
+                    <p class="card-text p-3">online@shopee.com</p>
+                    
+                </div>  
+            </div>    
+            <div class="col mb-3">
+                <div class="card">
+                    <h4 class="m-3">Address</h4>
+                  
+                    <p class="card-text p-3">Asia Headquater</p>
+                    
+                </div>  
+            </div>    
+        </div>
+        </div>
+
+        
+        <div class="card-footer">
+            <div class="container py-3">
+                <div class="row ">
+                    <div class="text-start col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" >
+                        Copyright@ Chirstmas's Service 
+                    </div>
+                    <div  class="text-end col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <a href="#"> Facebook </a>| <a href="">Instagram </a> | <a href="">Twitter</a> 
+                     </div>
+                    
+                </div>
+
+            </div>
+           
+            
+        </div>
+ 
+ 
+
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"> </script>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+
+    
+</body>
+</html>
