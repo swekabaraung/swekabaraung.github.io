@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnePage</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
      
 </head>
 <body>
@@ -50,7 +50,7 @@
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/1.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Name : Socks</p>
                         <p class="card-text p-3">Price : ฿403 - ฿450</p>
                         <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
                     </div>  
@@ -58,7 +58,7 @@
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/2.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Name : Toys </p>
                         <p class="card-text p-3">Price : ฿403 - ฿450</p>
                         <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
                     </div>  
@@ -66,7 +66,7 @@
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/3.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Name : Clothes</p>
                         <p class="card-text p-3">Price : ฿403 - ฿450</p>
                         <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
                     </div>  
@@ -74,7 +74,7 @@
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/4.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Name : Big Chirstmas Tree </p>
                         <p class="card-text p-3">Price : ฿403 - ฿450</p>
                         <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
                     </div>  
@@ -82,7 +82,7 @@
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/5.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Name : Snow Ball</p>
                         <p class="card-text p-3">Price : ฿403 - ฿450</p>
                         <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
                     </div>  
@@ -90,7 +90,7 @@
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/6.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Name : Flowers</p>
                         <p class="card-text p-3">Price : ฿403 - ฿450</p>
                         <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
                     </div>  
@@ -98,7 +98,7 @@
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/7.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Name : Beard</p>
                         <p class="card-text p-3">Price : ฿403 - ฿450</p>
                         <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
                     </div>  
@@ -106,7 +106,7 @@
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/8.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : </p>
+                        <p class="card-text p-3">Name : Chirstmas' Tree</p>
                         <p class="card-text p-3">Price : ฿403 - ฿450</p>
                         <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
                     </div>  
