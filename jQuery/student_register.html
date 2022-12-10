@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="addstudent">
+        Name : <input type="text" name="name" id="name"> <br> <br>
+        Email : <input type="email" name="email" id="email"> <br> <br>
+        Phone : <input type="number" name="phone" id="phone"> <br> <br>
+        Year : <select name="year" id="year">
+            <option value="">Choose Year</option>
+            <option value="1">First Year</option>
+            <option value="1">Second Year</option>
+        </select>
+        
+
+    </div>
+    <br><br>
+    <button id="add">Add to Student</button>
+    <h3>Student List</h3>
+    <table border="1" cellpadding="20" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Year</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kaung</td>
+                <td>englishswe59@gmail.com</td>
+                <td>09456789</td>
+                <td>First Year</td>
+
+            </tr>
+                
+         
+            
+        </tbody>
+
+    </table>
+     <script>
+        $(document).ready(function () {
+            $('#add').click(function (e) {
+                e.preventDefault();
+                let name=$('#name').val();
+                let email=$('#email').val();
+                let phone=$('#phone').val();
+                let year=$('#year').val();
+              })
+              console.log(name,email,phone,year);
+            
+        });
+     </script>
+    <script src="jquery-3.6.1.min.js"></script>
+</body>
+</html>
+
+<!-- CRUD
+C-Create
+R-read
+U-update
+D-Delete -->
