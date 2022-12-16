@@ -7,6 +7,17 @@
     <title>OnePage</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+    <style>
+        .noti{
+    position: relative;
+    top: -15px;
+    background-color: rgb(239, 240, 243);
+    padding:0px 7px;
+    border-radius:50% ;
+    left:-5px;
+}
+    </style>
      
 </head>
 <body>
@@ -23,7 +34,7 @@
                         <li  class="nav-item me-3 "><a href="" class="nav-link" >Gallery</a></li>
                         <li  class="nav-item me-3"><a href="" class="nav-link" >About</a></li>
                         <li  class="nav-item me-3"><a href="" class="nav-link" >Contact</a></li>
-                        <li> <a href="" class="nav-item me-3"><i class="fa-solid fa-cart-shopping fa-2x"></i></a></li>  
+                        <li> <a href="check_out.html" class="nav-item me-3 "><i class="fa-solid fa-cart-shopping fa-xl"></i><span class="noti"  id="count_number"></span></a></li>    
                     </ul>
                 </div>  
         </div>     
@@ -31,17 +42,7 @@
 
 
 <br>
-    <div class="card">
-        <div class="card-header ">
-            <h3 class="card-title p-3"> Christmas's Gallery</h3>
-            <p class="card-text p-3">The exchanging of gifts is one of the core aspects of the modern Christmas celebration, making it the most profitable time of year for retailers and businesses throughout the world. On Christmas, people exchange gifts based on the Christian tradition associated with Saint Nicholas,[208] and the gifts of gold, frankincense, and myrrh which were given to the baby Jesus by the Magi.</p>
-            <hr>
-            <p class="card-text p-3">Christmas gifts are specially selected presents that are given to loved ones during the holiday season in western cultures. Personalized gifts, unique presents, gift baskets, handmade items.</p>
-            <button class="btn btn-outline-primary ms-2">Read More</button>
-        </div>
-
-        <br>
-
+    
 
 
         <h1 class="text-center text-danger my-5">Chirstmas Gifts</h1>
@@ -51,64 +52,64 @@
                     <div class="card">
                         <img src="Images/1.png" alt="" class="card-img-top">
                         <p class="card-text p-3">Name : Socks</p>
-                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
-                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                        <p class="card-text p-3">Price : ฿403 </p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3 addToCart" data-id="1" data-name="Socks" data-price="403">Add to Cart</button>
                     </div>  
                 </div>
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/2.png" alt="" class="card-img-top">
                         <p class="card-text p-3">Name : Toys </p>
-                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
-                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                        <p class="card-text p-3">Price : ฿450</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3 addToCart" data-id="2" data-name="Toys" data-price="450">Add to Cart</button>
                     </div>  
                 </div>
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/3.png" alt="" class="card-img-top">
                         <p class="card-text p-3">Name : Clothes</p>
-                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
-                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                        <p class="card-text p-3">Price : ฿480</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3 addToCart" data-id="3" data-name="Clothes" data-price="480">Add to Cart</button>
                     </div>  
                 </div>
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/4.png" alt="" class="card-img-top">
                         <p class="card-text p-3">Name : Big Chirstmas Tree </p>
-                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
-                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                        <p class="card-text p-3">Price : ฿700</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3 addToCart" data-id="4" data-name="Big Chirstmas Tree" data-price="480">Add to Cart</button>
                     </div>  
                 </div>
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/5.png" alt="" class="card-img-top">
                         <p class="card-text p-3">Name : Snow Ball</p>
-                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
-                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                        <p class="card-text p-3">Price : ฿500</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3 addToCart" data-id="5" data-name="Snow Ball" data-price="500">Add to Cart</button>
                     </div>  
                 </div>
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/6.png" alt="" class="card-img-top">
                         <p class="card-text p-3">Name : Flowers</p>
-                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
-                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                        <p class="card-text p-3">Price : ฿200</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3 addToCart" data-id="6" data-name="Flowers" data-price="200">Add to Cart</button>
                     </div>  
                 </div>
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/7.png" alt="" class="card-img-top">
                         <p class="card-text p-3">Name : Beard</p>
-                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
-                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                        <p class="card-text p-3">Price : ฿150</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3 addToCart" data-id="7" data-name="Beard" data-price="150">Add to Cart</button>
                     </div>  
                 </div>
                 <div class="col mb-3">
                     <div class="card">
                         <img src="Images/8.png" alt="" class="card-img-top">
-                        <p class="card-text p-3">Name : Chirstmas' Tree</p>
-                        <p class="card-text p-3">Price : ฿403 - ฿450</p>
-                        <button class="btn btn-outline-primary w-50 ms-auto m-3">Add to Cart</button>
+                        <p class="card-text p-3">Name : Chirstmas' Accessories</p>
+                        <p class="card-text p-3">Price : ฿420</p>
+                        <button class="btn btn-outline-primary w-50 ms-auto m-3 addToCart" data-id="8" data-name="Chirstmas' Accessories" data-price="420">Add to Cart</button>
                     </div>  
                 </div>
         </div>
@@ -233,7 +234,76 @@
  
    
         <script src="bootstrap/js/bootstrap.bundle.min.js"> </script>
-        <script src="jquery-3.6.1.min.js"></script>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                count();
+                $('.addToCart').click(function (e) { 
+                    e.preventDefault();
+                    let id=$(this).data('id');
+                    let name=$(this).data('name');
+                    let price=$(this).data('price');
+
+                    console.log(id,name,price);
+
+                    let items={
+                        item_id :id,
+                        item_name :name,
+                        item_price : price,
+                        qty : 1,
+
+                    };
+
+                    let itemString=localStorage.getItem('shops');
+                    let itemArray;
+                    if (itemString==null){
+                        itemArray=[];
+
+                    }else{
+                        itemArray=JSON.parse(itemString);
+                    }
+                 
+                    var status=false;
+                    $.each(itemArray,function (i,v) { 
+                        if(id==v.item_id){
+                            status=true;
+                            v.qty++;
+                        }
+                     })
+
+                     if (status== false) {
+                        itemArray.push(items);
+                        
+                     }
+        
+                     let itemData=JSON.stringify(itemArray);
+                    localStorage.setItem('shops',itemData);
+                    count();
+
+
+                    
+                 });
+
+                 function count() { 
+                    let itemString=localStorage.getItem('shops');
+                    if (itemString) {
+                        let itemArray=JSON.parse(itemString);
+
+                        if (itemArray !=0) {
+                            let count=itemArray.length;
+                            // // let count='';
+                            // let count=0;
+                            // $.each(itemArray,function (i,v) {
+                            //     count +=v.qty;
+                            //   })
+                            $("#count_number").text(count);
+                            
+                        }
+                        
+                    }
+                  }
+            });
+        </script>
         <script src="fontawesome/js/all.min.js"></script>
     
 
