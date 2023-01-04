@@ -42,6 +42,15 @@
     border-radius:50% ;
     left:-5px;
 }
+
+
+
+
+
+
+
+
+
 .bunner_image{
     width: 100%;
     height: 80%;
@@ -63,7 +72,7 @@
 }
 .shop_now:hover{
     cursor: pointer;
-    background-color: black;
+    background-color: rgb(126, 23, 23);
     color: white;
 }
 /* Categories */

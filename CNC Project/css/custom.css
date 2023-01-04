@@ -1,0 +1,147 @@
+.gb-top-block {
+    height: 45px;
+    background: #2b2130;
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 90em;
+    position: relative;
+}
+.active_page{
+    color: #580b85 !important;
+}
+.active_page:hover{
+    color: #6d6e70;
+
+}
+
+.toggle {
+    font-size: .875em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.5em 24px 0.5em 0;
+    line-height: 1.4285714286em;
+    cursor: pointer;
+}
+.box1{
+    display: inline-block;
+    margin-left: 15px;
+}
+.panel div.sign-in-form {
+    padding: 1.125em;
+}
+.navbar-nav div a{
+    display: inline-block;
+    padding: 2px;
+
+}
+.navbar-nav2 {
+    margin-top: 5px;
+    padding: 5px;
+}
+.gb-btn{
+    border: none #faf5fc;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: #6d6e70;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-shadow: 0 -1px 1px #ededed;
+    white-space: nowrap;
+    cursor: pointer;
+    vertical-align: middle;
+    touch-action: manipulation;
+    
+}
+
+.noti{
+    position: relative;
+    top: -18px;
+    background-color: rgb(168, 110, 189);
+    padding:0px 7px;
+    border-radius:50% ;
+    text-decoration-color: #faf5fc;
+    left:-5px;
+}
+
+.navbar-brand{
+    font-style: italic;
+    font-size: medium;
+    font-weight: 500;
+    font: optional;
+    forced-color-adjust: #420e64;
+}
+.bg-video {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+/* carsouel  */
+.carousel_text{
+    position: absolute;
+    top: 120px;
+    left: 170px;
+    background-color: rgba(0,0,0,.35);
+    padding: 20px;
+    color: #f0f8ff;
+    
+
+} 
+@media (min-width: 768px) { .carousel_text{
+    position: absolute;
+    top: 80px;
+    left: 130px;
+    background-color: rgba(0,0,0,.35);
+    padding: 20px;
+    color: #f0f8ff;
+    
+
+}  }
+
+
+  /* New Arrival */
+  .divided{
+    width: 100px;
+    border: 2px solid#9d06e4;;
+
+  }
+  .New_Arrival_first_colour_hr{
+    display: inline-block;
+    border: 2px solid #25142d;
+    width: 50%;
+
+  }
+  .New_Arrival_second_colour_hr{
+    display: inline-block;
+    border: 2px solid #a214e9;
+    width: 50%;
+
+  }
+  .new_arrival_img_hover{
+    position: relative;
+
+  }
+  .view_detail{
+    position: absolute;
+    top: 50%;
+    left:40% ;
+    display: none;
+    
+  }
+  .new_arrival_img_hover:hover .view_detail{
+    display: block;
+
+  }
+  .new_arrival_img_hover:hover .new_arrival_image{
+    opacity: 0.6;
+
+  }

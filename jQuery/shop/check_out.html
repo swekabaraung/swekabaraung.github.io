@@ -150,6 +150,12 @@
             </tfoot>
     
         </table>
+
+        <div>
+            <div>
+
+            </div>
+        </div>
     
         
 
@@ -158,6 +164,7 @@
     <script src="../jquery-3.6.1.min.js"></script>
     <script>
          $(document).ready(function () {
+            count();
             $('.addToCart').click(function (e) { 
                 e.preventDefault();
                     let id=$(this).data('id');
@@ -175,6 +182,7 @@
                 if (cartGetData) {
                     let cartDataArray=JSON.parse(cartGetData);
                     let data='';
+                    let total=0;
                   
                    
 
@@ -188,24 +196,50 @@
                             <td>${v.item_id}</td>
                             <td>${v.item_name}</td>
                             <td>
-                                <button id="substration" data-id="${i}"  data-substrat="${v.cart_substrat}">-</button>
+                                <button btn btn-sm btn-outline-secondary id="substration" data-id="${i}"  data-substrat="${v.cart_substrat}" min>-</button>
                                 ${v.item_price}
-                                 <button id="addtion" data-did="${i}">+</button> </td>
+                                 <button id="addtion" data-did="${i}" data-substrat="${v.cart_add}" max>+</button> </td>
                                 
                             </td>
                             <td>${v. qty}</td>
-                            <td>Subtotal</td>
-                          
-                                
-                             
-                            
+                            <td>${v.item_price * v. qty}</td>
                             </tr>`;
+                            total +=v.item_price * v. qty
 
-                     })
+                     });
+                     data +=`<td colspan="4">Total</td>`
                      
                      $('#tbody').html(data);
                 }
 
+               $('tbody').on('click', '.min', function () {
+                // alert('Hi');
+                let item_i=$(this).data('item_i');
+                let itemStr=localStorage.getItem('shops');
+                if (itemStr) {
+                    let itemArr=JSON.parse(itemStr);
+
+                    $.each(itemArr, function (i, v) { 
+                        if (item_i==1) {
+                            v.qty--;
+                            if (v.qty==0) {
+                                itemArr.splice(iteme_i,1);
+                                
+                            }
+                            
+                        }
+                         
+                    });
+
+                    let itemData=JSON.stringify(itemArr);
+                    localStorage.setItem('shops',itemData);
+                    getData();
+                    count();
+                    
+                }
+
+                
+               });
             
 
          });
