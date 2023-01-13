@@ -81,7 +81,11 @@
     transition: all 0.3s ease ;
     text-decoration: none;
 }
-.main-btn:hover{
+.main-btn .check{
+    text-decoration: none;
+}
+
+.main-btn :hover{
     background-color: hsl(0, 53%, 58%);
     color: ghostwhite;
     border-color: #ffd700;
